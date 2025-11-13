@@ -1,3 +1,8 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
 
 .hero .hide {
   opacity: 1;
@@ -65,6 +70,7 @@
 /*****/
 .experience{
    background-image: url(./img/jahid-book.jpg);
+    opacity: 60%;
     background-position: center;
     background-size: cover;
     height: 370px;
