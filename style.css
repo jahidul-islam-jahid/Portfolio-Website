@@ -52,6 +52,9 @@ html {
     justify-content: center;
   }
   .right-side{ 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     display: none;
 }
 }
