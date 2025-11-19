@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
+  <title>J.I.Jahid</title>
 
   <!--style css-->
   <link rel="stylesheet" href="./style.css">
@@ -40,44 +40,74 @@
 
   <secion class="Full-body-section flex">
     <!-- Sidebar / Nav section start -->
-    <aside class="z-50  h-screen w-[15%] flex flex-col items-center border-r border-gray-600 py-8 space-y-8 sticky top-0 bg-red-950 bg-[linear-gradient(140deg,black_40%,transparent)] ">
-      <!-- Profile Image -->
-      <div>
-        <img class="w-44 h-44 rounded-full border-4 border-red-950 mx-auto" src="./img/jahid nav.png" alt="Profile">
-      </div>
-      <!-- Navigation Menu -->
-      <nav>
-        <audio id="clickSound" src="sound.wav" preload="auto"></audio>
-        <ul class="flex flex-col space-y-2 text-center font-medium text-gray-400">
-          <li  onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 font-semibold text-red-600 duration-1000 rounded-md p-1">
-            <i class="fa-solid fa-house"></i> <a href="#hero">Home</a>
-          </li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-user text-red-600"></i> <a href="#about">About</a></li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-file text-red-600"></i> Resume</li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-briefcase text-red-600"></i><a href="#portfolio">Portfolio</a></li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-tags text-red-600"></i> Pricing</li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-users text-red-600"></i> Clients</li>
-          <li onclick="startSound()" class="cursor-pointer flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1"><i
-              class="fa-solid fa-envelope text-red-600"></i> Contact</li>
-        </ul>
-      </nav>
-      <!-- Social Icons -->
-      <div class="mt-auto text-start">
-        <p class="font-semibold mb-2 text-gray-400 border-t-2 border-gray-600 pt-5">Find With Me</p>
-        <div class="flex justify-center space-x-4 text-xl">
-          <a href="#" class="text-blue-700 hover:text-blue-900 transition"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" class="text-pink-500 hover:text-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="text-blue-400 hover:text-blue-600 transition"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="text-blue-800 hover:text-blue-900 transition"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-      </div>
+    <!-- Desktop Sidebar -->
+    <aside class="hidden lg:flex z-50 h-screen w-[15%] flex-col items-center border-r border-gray-600 justify-center space-y-10 sticky top-0 bg-red-950 bg-[linear-gradient(140deg,black_40%,transparent)]">
+  
+  <!-- Profile Image -->
+  <div>
+    <img class="w-52 h-52 rounded-full border-4 border-red-950 mx-auto" src="./img/jahid nav.png" alt="Profile">
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <audio id="clickSound" src="sound.wav" preload="auto"></audio>
+    <ul class="flex flex-col space-y-3 text-center font-medium text-gray-400">
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 font-semibold text-red-600 duration-1000 rounded-md p-1">
+        <i class="fa-solid fa-house"></i> <a href="#hero">Home</a>
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-user text-red-600"></i> <a href="#about">About</a>
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-file text-red-600"></i> Resume
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-briefcase text-red-600"></i><a href="#portfolio">Portfolio</a>
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-tags text-red-600"></i> Pricing
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-users text-red-600"></i> Clients
+      </li>
+      <li onclick="startSound()" class="cursor-pointer text-xl flex items-center gap-2 pr-20 duration-1000 hover:text-red-600 rounded-md p-1">
+        <i class="fa-solid fa-envelope text-red-600"></i> Contact
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Social Icons -->
+  <div class="mt-auto text-start">
+    <p class="font-semibold mb-2 text-xl text-gray-400 border-t-2 border-gray-600 pt-5">Find With Me</p>
+    <div class="flex justify-center space-x-4 text-2xl">
+      <a href="#" class="text-blue-700 hover:text-blue-900 transition"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" class="text-pink-500 hover:text-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="text-blue-400 hover:text-blue-600 transition"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="text-blue-800 hover:text-blue-900 transition"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </div>
+
     </aside>
-    <!-- Sidebar / Nav section End -->
+    <!-- Mobile & Tablet Navbar -->
+<!-- <header class="lg:hidden fixed top-0 left-0 w-full text-white z-50 shadow-md rounded-l-full">
+  <div class="flex justify-center items-center py-2 bg-red-950">
+    
+    <!-- Small Logo -->
+    <!-- <div class="flex items-center gap-2">
+      <img src="./img/jahid nav.png" class="w-12 h-12 rounded-full border-2 border-red-700" alt="">
+      <h2 class="text-xl font-bold">Jahid</h2>
+    </div>
+
+    <!-- Dropdown Menu (always visible) -->
+    <!-- <nav id="mobileMenu" class="flex items-center text-white px-4 py-4 space-y-3 text-lg">
+      <a onclick="startSound()" class="hover:text-red-300" href="#hero"><i class="fa-solid fa-house"></i> Home</a>
+      <a onclick="startSound()" class="hover:text-red-300" href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a onclick="startSound()" class="hover:text-red-300" href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+      <a onclick="startSound()" class="hover:text-red-300" href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+  </div>
+</header>  -->
 
 
 
@@ -87,27 +117,34 @@
       <section class="hero text-white flex" id="hero">
         <div class="w-[90%] container mx-auto flex flex-col md:flex-row items-center gap-8">
           <!-- Left Side -->
-          <div class="flex-1 space-y-4">
-            <p class="font-semibold uppercase">Hello</p>
-            <h2 class="font-semibold text-xl md:text-8xl">I'm Jahidul Islam</h2>
-            <p class="font-semibold text-2xl md:text-4xl">
-              A <span class="text-red-600 font-bold">Web Designer</span>
+          <div class="flex-1 space-y-1 md:space-y-2 lg:space-y-4 left-content">
+            <p class="font-semibold uppercase text-md md:text-lg lg:text-xl">Hello</p>
+            <h2 class="font-semibold text-xl md:text-2xl lg:text-7xl">I'm Jahidul Islam</h2>
+            <p class="font-semibold text-lg md:text-2xl lg:text-5xl">
+              A <span class="text-red-600  font-bold ">MERN Stack Developer</span>
             </p>
-            <p class="text-gray-300 max-w-md pb-5">
-              A personal portfolio is a collection of your work, achievements, and skills that highlights your abilities
-              and professional growth. It serves as
+            <p class="text-gray-300 text-lg max-w-md pb-5">
+              I am a professional MERN Stack (Front End Developer) and Expart in ReactJS, JavaScript, Tailwind and NextJS(Basic).
             </p>
-            <a class="my-5" target="_blank" href="https://drive.google.com/file/d/1R1DEYK68qPu_HmA7J72QFCo3Ef7n3KpL/view?usp=drive_link">
+           <div class="flex flex-grow gap-4 items-center ">
+             <a class=" my-0 md:my-0 lg:my-4" target="_blank" href="https://drive.google.com/file/d/1R1DEYK68qPu_HmA7J72QFCo3Ef7n3KpL/view?usp=drive_link">
               <button
-              class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
-              <i class="fa-solid fa-arrow-right show"></i>
+              class="bg-red-600 text-lg font-semibold hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
               <span>Download CV</span>
-              <i class="fa-solid fa-arrow-right hide"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </button>
             </a>
+            <a class="my-0 md:my-0 lg:my-4" target="_blank" href="https://www.fiverr.com/users/jahid_190">
+              <button
+              class="bg-red-600 text-lg font-semibold hover:bg-red-700 text-white px-6 py-2.5 rounded-lg inline-flex items-center gap-2">
+              <span>Hire Me</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            </a>
+           </div>
           </div>
           <!-- Right Side -->
-          <div class="flex-1 flex flex-col items-center relative ">
+          <div class="flex-1 flex flex-col items-center relative hidden md:hidden lg:block">
             <img class="w-fit z-10 hero-img " src="./img/jahid'.png" alt="Jahidul Islam">
             <h2
               class="uppercase text-3xl md:text-6xl font-extrabold absolute bottom-0 -translate-y-20 translate-x-4 top-52 up-down duration-1000">
@@ -527,6 +564,7 @@
     </secion>
 
     <script>
+
       const form = document.getElementById("contact-form")
 
       form.addEventListener('submit', function (e) {
